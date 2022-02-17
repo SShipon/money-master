@@ -10,7 +10,7 @@ const totalExpenses = document.getElementById("total-expenses");
 const saveField = document.getElementById("save_field");
 const saveBtn = document.getElementById("save-btn-hero");
 const savingAmount = document.getElementById("saving-amount");
-const totalRemaniningBalance = document.getElementById("remaining-balance");
+const totalRemainingBalanece = document.getElementById("remaining-balance");
 
 // TOTAL EXPENSES
 calculateBtn.addEventListener("click", function () {
@@ -52,7 +52,7 @@ function savePrice() {
   var totalValue = numVal1 * (numVal2 / 100);
   savingAmount.innerText = totalValue.toFixed(0);
 
-  totalRemaniningBalance.innerText =
+  totalRemainingBalanece.innerText =
     balanceId.innerText - savingAmount.innerText;
 }
 
@@ -72,16 +72,18 @@ function handleError() {
       clothesField.value ||
       saveField.value) < 0
   ) {
-    alert("Please Insert only Positve Number");
+    alert("Please Insert only positive Number");
     return;
-  } else if (
+  }
+   else if (
     isNaN(incomeField.value) ||
     isNaN(foodField.value) ||
     isNaN(rentField.value) ||
     isNaN(clothesField.value) ||
     isNaN(saveField.value) === true
   ) {
-    alert("Please insert a number");
+    alert("Please insert a valid number");
     return;
   }
+
 }
