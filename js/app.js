@@ -46,10 +46,9 @@ saveBtn.addEventListener("click", function () {
 
 // SAVING
 function savePrice() {
-  var numVal1 = parseInt(balanceId.innerText);
+   const income = parseInt(incomeField.value);
   var numVal2 = parseInt(saveField.value);
-
-  var totalValue = numVal1 * (numVal2 / 100);
+  var totalValue = (income * numVal2) / 100
   savingAmount.innerText = totalValue.toFixed(0);
 
   totalRemainingBalanece.innerText =
