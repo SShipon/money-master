@@ -11,7 +11,7 @@
 </head>
 <body>
   <header>
-    <h2 class="text-center text-info fw-bold mt-5 mb-5">Finance Calculation</h2>
+    <h2 class="text-center text-warning fw-bold mt-5 mb-5">My <span class="text-info">Family</span> Calculation</h2>
   </header>
   <main class="container">
      <div class="row d-flex align-items-center  ">
@@ -24,23 +24,23 @@
 
               <div class="input-group">
                 <span class="input-group-text">Income :</span>
-                <input id="income-filed" type="number" aria-label="First name" class="form-control">
+                <input id="income-field" type="number" aria-label="First name" class="form-control">
               </div>
 
               <h4 class="text-center my-3">Expenses</h4>
               <div class="input-group">
                 <span class="input-group-text">Food :</span>
-                <input id="food-filed" type="number" aria-label="First name" class="form-control">
+                <input id="food-field" type="number" aria-label="First name" class="form-control">
               </div>
 
               <div class="input-group mt-3">
                 <span class="input-group-text">Rent :</span>
-                <input  id="rent-filed" type="number" aria-label="First name" class="form-control">
+                <input  id="rent-field" type="number" aria-label="First name" class="form-control">
               </div>
 
               <div class="input-group my-3">
                 <span class="input-group-text ">Clothes :</span>
-                <input id="clothes-filed" type="number" aria-label="First name" class="form-control">
+                <input id="clothes-field" type="number" aria-label="First name" class="form-control">
               </div>
 
               <div class="d-flex justify-content-center my-5 ">
@@ -48,37 +48,36 @@
               </div>
 
               <div>
-                <h3 class="text-center text-danger">Total Expenses: <span id="total-expense">00</span>  </h3>
-                <h3 class="text-center text-info mt-3">Balance: <span id="balance"> 00</span></h3>
+                <h3 class="text-center">Total Expenses: <span id="balanceId">00</span>  </h3>
+                <h3 class="text-center text-info mt-3">Balance: <span id="total-expenses"> 00</span></h3>
               </div>
 
-              
-                  <div class="row text-center align-items-center  justify-content-center  d-flex m-5">
+                <section class="my-5">
+                          <div class="row text-center align-items-center  justify-content-center  d-flex m-5">
                     <div class="col-lg-4 ">
                       <div class="input-group  my-3">
                         <span class="input-group-text ">Save :</span>
-                        <input id="save-input" type="number" aria-label="First name" class="form-control">
+                        <input id="save_field" type="number" aria-label="First name" class="form-control">
                       </div>
                     </div>
                     <div class="col-lg-4">
                       <h5><span>%</span></h5>
                     </div>
                     <div class="col-lg-4">
-                      <button id="save-button" class="btn btn-info text-white fw-bold ">Save</button>
+                      <button id="save-btn-hero" class="btn btn-info text-white fw-bold ">Save</button>
                     </div>
                   </div>
+                </section>
+          
                 <div>
-                  <h3 class="text-center text-success">Saving Amount: <span id="saving-amount">2000 </span></h3>
-                  <h3 class="text-center text-info">Remaining Balance: <span id="remaing-balance">2500</span> </h3>
-                </div>
-               
-
-             
+                  <h3 class="text-center text-success">Saving Amount: <span id="saving-amount">00</span></h3>
+                  <h3 class="text-center">Remaining Balance: <span id="remaining-balance">00</span> </h3>
+                </div>    
         </div>
        </div>
      </div>
   </main>
 
-  <script src="./js/app.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
